@@ -1,0 +1,359 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/screen.scss */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+/* line 17, ../sass/screen.scss */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+  border-top: 2px #ededed solid;
+  border-bottom: 2px #ededed solid;
+}
+
+/* line 24, ../sass/screen.scss */
+::-webkit-scrollbar-track {
+  background: #c4c4c4;
+  border-radius: 50px;
+}
+
+/* line 29, ../sass/screen.scss */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* line 34, ../sass/screen.scss */
+body {
+  scrollbar-face-color: #888;
+  scrollbar-track-color: #c4c4c4;
+}
+
+/* line 42, ../sass/screen.scss */
+body {
+  background-color: #fedfe1;
+}
+
+/* line 46, ../sass/screen.scss */
+#background {
+  opacity: .1;
+  background-image: url('/images/background.png?1491295503');
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 1280px;
+  height: 1653px;
+  z-index: -90;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 62, ../sass/screen.scss */
+#bg-gradient1 {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  height: 200px;
+  z-index: -100;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 74, ../sass/screen.scss */
+#bg-gradient2 {
+  background: #FFF;
+  height: calc(1653px - 750px - 200px);
+  z-index: -100;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 86, ../sass/screen.scss */
+#bg-gradient3 {
+  background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
+  height: 750px;
+  z-index: -100;
+  top: 903px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 98, ../sass/screen.scss */
+#bg-sakura {
+  background-image: url('/images/background_sakura.png?1491300738');
+  height: 1653px;
+  z-index: -99;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* line 110, ../sass/screen.scss */
+.container {
+  margin: auto;
+  width: calc(1280px - 46px * 2);
+}
+/* line 114, ../sass/screen.scss */
+.container nav {
+  height: 90px;
+  margin-top: 40px;
+}
+/* line 118, ../sass/screen.scss */
+.container nav a {
+  text-decoration: none;
+  font-family: "tenby-five";
+  font-weight: 700;
+  font-size: 20pt;
+  margin-right: 138px;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.32s;
+  -o-transition-duration: 0.32s;
+  -webkit-transition-duration: 0.32s;
+  transition-duration: 0.32s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 131, ../sass/screen.scss */
+.container nav a:link {
+  color: #2B2B2B;
+}
+/* line 135, ../sass/screen.scss */
+.container nav a:visited {
+  color: #2B2B2B;
+}
+/* line 139, ../sass/screen.scss */
+.container nav a:hover {
+  color: #fcaeb3;
+}
+/* line 143, ../sass/screen.scss */
+.container nav a:active {
+  color: #FFF;
+}
+/* line 148, ../sass/screen.scss */
+.container nav > .icon {
+  margin-right: 16px;
+}
+/* line 152, ../sass/screen.scss */
+.container nav > .logo {
+  width: 204px;
+  height: 51px;
+  display: inline;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+/* line 162, ../sass/screen.scss */
+.container-jacket {
+  height: 800px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* line 170, ../sass/screen.scss */
+.container-jacket > img {
+  border-bottom: #BBB 2px solid;
+}
+/* line 174, ../sass/screen.scss */
+.container-jacket > div {
+  width: 228px;
+  height: 800px;
+  writing-mode: vertical-lr;
+}
+/* line 179, ../sass/screen.scss */
+.container-jacket > div > div {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  height: 800px;
+  font-family: "source-han-serif-tc";
+  font-weight: 900;
+  font-size: 56pt;
+  margin: 20px 20px 0px 20px;
+  opacity: 0;
+  position: relative;
+}
+/* line 193, ../sass/screen.scss */
+.container-tracklist {
+  height: calc(1653px - 40px * 2 - 800px - 90px - 100px);
+  margin-top: 40px;
+}
+/* line 198, ../sass/screen.scss */
+.container-tracklist > div {
+  margin: auto;
+  width: 576px;
+  font-weight: 700;
+  font-family: "source-han-serif-tc";
+}
+/* line 204, ../sass/screen.scss */
+.container-tracklist > div > span {
+  font-family: "Sylfaen";
+  font-size: 24pt;
+  font-weight: 600;
+}
+/* line 210, ../sass/screen.scss */
+.container-tracklist > div > hr {
+  margin: 10px 15px 0px 15px;
+  border-width: 1px;
+  border-color: #2b2b2b;
+}
+/* line 216, ../sass/screen.scss */
+.container-tracklist > div > ul {
+  text-align: center;
+  font-size: 14pt;
+  line-height: 44pt;
+}
+
+/* line 225, ../sass/screen.scss */
+.footer {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(252, 174, 179, 0.1);
+  mix-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+}
+/* line 234, ../sass/screen.scss */
+.footer > div {
+  width: calc(1280px - 46px * 2);
+}
+/* line 236, ../sass/screen.scss */
+.footer > div > p {
+  text-align: center;
+  font-family: "source-han-serif-tc";
+  font-weight: 500;
+  white-space: pre-line;
+  font-size: 10pt;
+  line-height: 16pt;
+  margin-top: 8pt;
+}
+/* line 247, ../sass/screen.scss */
+.footer-stick {
+  font-family: "source-han-serif-tc";
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 7pt;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* line 260, ../sass/screen.scss */
+.musicPlayer {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: multiply;
+  font-family: "source-han-serif-tc";
+  font-weight: 600;
+  font-size: 8pt;
+  padding: 10px;
+  color: #FFF;
+  width: 280px;
+  height: 20px;
+  position: fixed;
+  right: 0;
+  top: 110px;
+}
+/* line 274, ../sass/screen.scss */
+.musicPlayer > .button {
+  width: 17px;
+  height: 18px;
+  display: inline-block;
+}
+/* line 280, ../sass/screen.scss */
+.musicPlayer > .trackinfo {
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  left: 2px;
+}

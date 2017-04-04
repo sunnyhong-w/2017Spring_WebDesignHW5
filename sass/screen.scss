@@ -1,0 +1,286 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+
+@mixin scrollbars($size, $foreground-color, $border-radius: 0px, $background-color: mix($foreground-color, white, 50%), $boarder-color: mix($foreground-color, white, 15%)) {
+    // For Google Chrome
+    ::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+        border-radius: $border-radius;
+        border-top: 2px $boarder-color solid;
+        border-bottom: 2px $boarder-color solid;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $background-color;
+        border-radius: $border-radius;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+
+    // For Internet Explorer
+    body {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+
+@include scrollbars(0.5em, #888, 50px);
+
+body {
+    background-color: #fedfe1;
+}
+
+#background {
+    opacity: .1;
+    background-image: image-url("background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1280px;
+    height: 1653px;
+    z-index: -90;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#bg-gradient1 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    height: 200px;
+    z-index: -100;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#bg-gradient2 {
+    background: #FFF;
+    height: calc(1653px - 750px - 200px);
+    z-index: -100;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#bg-gradient3 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 750px;
+    z-index: -100;
+    top: 903px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#bg-sakura {
+    background-image: image-url("background_sakura.png");
+    height: 1653px;
+    z-index: -99;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+.container {
+    margin: auto;
+    width: calc(1280px - 46px * 2);
+
+    nav {
+        //background-color: #2B2B2B;
+        height: 90px;
+        margin-top: 40px;
+        a {
+            text-decoration: none;
+            font-family: "tenby-five";
+            font-weight: 700;
+            font-size: 20pt;
+            margin-right: 138px;
+
+            @include transition-property(color);
+
+            @include transition-duration(0.32s);
+
+            @include transition-timing-function(ease-out);
+
+            &:link {
+                color: #2B2B2B;
+            }
+
+            &:visited {
+                color: #2B2B2B;
+            }
+
+            &:hover {
+                color: darken(#fedfe1, 10%);
+            }
+
+            &:active {
+                color: #FFF;
+            }
+        }
+
+        > .icon {
+            margin-right: 16px;
+        }
+
+        > .logo {
+            width: 204px;
+            height: 51px;
+            display: inline;
+            position: relative;
+            top: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &-jacket {
+        //background-color: #987654;
+        height: 800px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        > img {
+            border-bottom: #BBB 2px solid;
+        }
+
+        > div {
+            width: 228px;
+            height: 800px;
+            writing-mode: vertical-lr;
+
+            > div {
+                -webkit-writing-mode: vertical-lr;
+                writing-mode: vertical-lr;
+                height: 800px;
+                font-family: "source-han-serif-tc";
+                font-weight: 900;
+                font-size: 56pt;
+                margin: 20px 20px 0px 20px;
+                opacity: 0;
+                position: relative;
+            }
+        }
+    }
+
+    &-tracklist {
+        //background-color: #456789;
+        height: calc(1653px - 40px * 2 - 800px - 90px - 100px);
+        margin-top: 40px;
+
+        > div {
+            margin: auto;
+            width: 576px;
+            font-weight: 700;
+            font-family: "source-han-serif-tc";
+
+            > span {
+                font-family: "Sylfaen";
+                font-size: 24pt;
+                font-weight: 600;
+            }
+
+            > hr {
+                margin: 10px 15px 0px 15px;
+                border-width: 1px;
+                border-color: #2b2b2b;
+            }
+
+            > ul {
+                text-align: center;
+                font-size: 14pt;
+                line-height: 44pt;
+            }
+        }
+    }
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(darken(#fedfe1, 10%), 0.1);
+    mix-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+
+    > div {
+        width: calc(1280px - 46px * 2);
+        > p {
+            text-align: center;
+            font-family: "source-han-serif-tc";
+            font-weight: 500;
+            white-space: pre-line;
+            font-size: 10pt;
+            line-height: 16pt;
+            margin-top: 8pt;
+        }
+    }
+
+    &-stick {
+        font-family: "source-han-serif-tc";
+        text-align: center;
+        vertical-align: text-bottom;
+        font-size: 7pt;
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+.musicPlayer{
+	background-color: rgba(0,0,0,.25);
+	background-blend-mode: multiply;
+	font-family: "source-han-serif-tc";
+	font-weight: 600;
+	font-size: 8pt;
+	padding: 10px;
+	color: #FFF;
+    width: 280px;
+    height: 20px;
+    position: fixed;
+    right: 0;
+    top: 110px;
+
+    > .button{
+    	width: 17px;
+    	height: 18px;
+    	display: inline-block;
+    }
+
+    > .trackinfo{
+    	display: inline-block;
+    	position: relative;
+    	top: -4px;
+    	left: 2px;
+    }
+}
