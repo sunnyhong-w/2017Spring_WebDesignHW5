@@ -106,7 +106,7 @@ body {
 /* line 46, ../sass/screen.scss */
 #background {
   opacity: .1;
-  background-image: url('/images/background.png?1491295503');
+  background-image: url('/2017Spring_WebDesignHW5/images/background.png?1491295503');
   background-repeat: no-repeat;
   background-position: center top;
   width: 1280px;
@@ -161,7 +161,7 @@ body {
 
 /* line 98, ../sass/screen.scss */
 #bg-sakura {
-  background-image: url('/images/background_sakura.png?1491300738');
+  background-image: url('/2017Spring_WebDesignHW5/images/background_sakura.png?1491300738');
   height: 1653px;
   z-index: -99;
   top: 0px;
